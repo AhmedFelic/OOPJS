@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <link rel="stylesheet" href="style.css">
+<head>
+
+
+
+</head>
+
+<body  onload="ucitajPodatke()">
+
+<p>Podaci se sporije ucitavaju prvi put</p>
+
+
+<button onclick="ucitajPodatke()">Primi</button>
+<br></br>
+
+<div class="spoljni" id="spoljni">
+    <div class="unutrasnji">
+      <h4>1. Unutrasnji</h4>
+    </div>
+    <div class="unutrasnji">
+      <h4>2. Unutrasnji</h4>
+    </div> 
+    <div class="unutrasnji">
+      <h4>3. Unutrasnji</h4>
+    </div>
+    <div class="unutrasnji">
+      <h4>4. Unutrasnji</h4>
+    </div>
+  </div>
+<br></br>
+ 
+   
+      <label for="ime">Ime</label>
+      <input class="inp" type="text" name="ime" id="ime">
+      <br>
+      <label for="prezime">Prezime</label>
+      <input class="inp" type="text" name="prezime" id="prezime">
+      <br>
+      <label for="adresa">Adresa</label>
+      <input class="inp" type="text" name="adresa" id="adresa">
+      <br>
+      <label for="proizID">ID proizvoda</label>
+      <input class="inp" type="text" name="proizID" id="proizID" readonly>
+      <br>
+      <label for="komada">Komada</label>
+      <input class="inp"  type="number" name="komada" id="komada">
+      <br>
+      <label for="email">kontakt e-mail</label>
+      <input class="inp" type="text" name="email" id="email">
+      <br>
+      <button onclick="posaljiNarudzbu()">Naruci</button>
+
+      <h4>Narudzba: </h4>
+      <p id="narudzbaW"> </p>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
